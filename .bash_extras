@@ -1,5 +1,5 @@
 # prompt
-export PS1='[%~] '
+export PS1='[\w] '
 
 # shortcuts
 alias c=clear
