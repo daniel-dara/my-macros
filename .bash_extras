@@ -14,9 +14,10 @@ alias ....="cd ../../../.."
 alias .....="cd ../../../../.."
 
 # rc
-alias rc-source="source ~/.bashrc"
-alias rc-edit="vim ~/.bashrc"
-alias rc-print="cat ~/.bashrc"
+alias x-source="source ~/.bash_extras"
+alias x-edit="vim ~/.bash_extras"
+alias x-print="cat ~/.bash_extras"
+alias x-pull="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
 
 # SSH
 alias access="ssh ddara@access.clemson.edu -Y"
