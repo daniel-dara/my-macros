@@ -1,5 +1,5 @@
 # prompt
-export PS1='[\w] '
+export PS1="[\u@\h:\w] "
 
 # shortcuts
 alias c=clear
@@ -17,13 +17,14 @@ alias .....="cd ../../../../.."
 alias x-source="source ~/.bash_extras"
 alias x-edit="vim ~/.bash_extras"
 alias x-print="cat ~/.bash_extras"
-alias x-pull="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
+alias x-refresh="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
 
 # SSH
 alias access="ssh ddara@access.cs.clemson.edu -Y"
-alias dragon="ssh ddara@dragon10.cs.clemson.edu -Y"
+alias dragon="ssh ddara@dragon14.cs.clemson.edu -Y"
+alias hornet="ssh ddara@hornet14.cs.clemson.edu -Y"             
+alias imp="ssh ddara@imp14.cs.clemson.edu -Y"
 alias kepler="ssh ddara@kepler.cs.clemson.edu -Y"               
-alias hornet="ssh ddara@hornet12.cs.clemson.edu -Y"             
 alias palmetto="ssh ddara@user.palmetto.clemson.edu -Y"
 
 # Other
