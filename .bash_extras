@@ -7,6 +7,7 @@ alias e=exit
 alias ll="ls -l"
 alias up="cd .."
 alias rm="rm -i"
+alias del="rm -Rfv"
  
 alias .="cd .."
 alias ..="cd ../.."
