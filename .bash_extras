@@ -1,19 +1,23 @@
-# prompt
+#prompt
 export PS1="[\u@\h:\w] "
 
-# shortcuts
+# miscellaneous
 alias c=clear
 alias e=exit
 alias ll="ls -l"
 alias up="cd .."
 alias rm="rm -i"
-alias del="rm -Rfv"
+alias rmall="rm -Rf"
  
 alias .="cd .."
 alias ..="cd ../.."
 alias ...="cd ../../.."
 alias ....="cd ../../../.."
 alias .....="cd ../../../../.."
+
+# trash
+alias del="trash-put"
+alias tl="trash-list"
 
 # rc
 alias x-source="source ~/.bash_extras"
@@ -28,6 +32,19 @@ alias hornet="ssh ddara@hornet14.cs.clemson.edu -Y"
 alias imp="ssh ddara@imp14.cs.clemson.edu -Y"
 alias kepler="ssh ddara@kepler.cs.clemson.edu -Y"               
 alias palmetto="ssh ddara@user.palmetto.clemson.edu -Y"
+
+# Make
+alias m="make"
+alias mr="make run"
+alias mc="make clean"
+
+# Git
+alias gp="git pull"
+alias gs="git status"
+alias gall="git add -A"
+alias gc="git commit -m "
+alias gsh="git push"
+alias gd="git diff"
 
 # Other
 alias eclipse="eclipse > /dev/null 2>&1 &"
