@@ -1,7 +1,7 @@
-#prompt
+# Change prompt
 export PS1="[\u@\h:\w] "
 
-# miscellaneous
+# General Shortcuts
 alias c=clear
 alias e=exit
 alias ll="ls -l"
@@ -15,23 +15,11 @@ alias ...="cd ../../.."
 alias ....="cd ../../../.."
 alias .....="cd ../../../../.."
 
-# trash
+alias refresh-bash-extras="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
+
+# Trash
 alias del="trash-put"
 alias tl="trash-list"
-
-# rc
-alias x-source="source ~/.bash_extras"
-alias x-edit="vim ~/.bash_extras"
-alias x-print="cat ~/.bash_extras"
-alias x-refresh="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
-
-# SSH
-alias access="ssh ddara@access.cs.clemson.edu -Y"
-alias dragon="ssh ddara@dragon14.cs.clemson.edu -Y"
-alias hornet="ssh ddara@hornet14.cs.clemson.edu -Y"             
-alias imp="ssh ddara@imp14.cs.clemson.edu -Y"
-alias kepler="ssh ddara@kepler.cs.clemson.edu -Y"               
-alias palmetto="ssh ddara@user.palmetto.clemson.edu -Y"
 
 # Make
 alias m="make"
@@ -41,12 +29,10 @@ alias mc="make clean"
 # Git
 alias gp="git pull"
 alias gs="git status"
-alias gall="git add -A"
+alias ga="git add -A"
 alias gc="git commit -m "
 alias gsh="git push"
 alias gd="git diff"
 
 # Other
-alias eclipse="eclipse > /dev/null 2>&1 &"
-alias readall="chmod a+r"
 alias countall="find /web/home/ddara/public_html/projects -type f -exec wc -l {} \; | awk '{total += \$1} END{print total}'"
