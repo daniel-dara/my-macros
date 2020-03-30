@@ -1,38 +1,35 @@
+alias refresh-bash-extras="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
+
 # Change prompt
+# [user@host:directory]
 export PS1="[\u@\h:\w] "
 
 # General Shortcuts
 alias c=clear
 alias e=exit
-alias ll="ls -l"
-alias up="cd .."
+alias ll="ls -lTh"
 alias rm="rm -i"
 alias rmall="rm -Rf"
  
-alias .="cd .."
-alias ..="cd ../.."
-alias ...="cd ../../.."
-alias ....="cd ../../../.."
+alias     .="cd .."
+alias    ..="cd ../.."
+alias   ...="cd ../../.."
+alias  ....="cd ../../../.."
 alias .....="cd ../../../../.."
 
-alias refresh-bash-extras="wget https://raw.github.com/danielsd/bash_extras/master/.bash_extras -O ~/.bash_extras"
-
-# Trash
-alias del="trash-put"
-alias tl="trash-list"
-
 # Make
-alias m="make"
+alias  m="make"
+alias mi="make install"
 alias mr="make run"
 alias mc="make clean"
 
 # Git
-alias gp="git pull"
-alias gs="git status"
-alias ga="git add -A"
-alias gc="git commit -m "
-alias gsh="git push"
-alias gd="git diff"
-
-# Other
-alias countall="find /web/home/ddara/public_html/projects -type f -exec wc -l {} \; | awk '{total += \$1} END{print total}'"
+alias gch="git checkout"
+alias  gs="git status"
+alias  gd="git diff"
+alias gdc="git diff --cached"
+alias  ga="git add -A"
+alias gco="git commit -m "
+alias gpl="git pull"
+alias gps="git push"
+alias gup="git set-upstream"
