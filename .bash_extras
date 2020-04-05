@@ -7,23 +7,23 @@ export PS1="[\u@\h:\w] "
 # General Shortcuts
 alias c=clear
 alias e=exit
-alias ll="ls -lTh"
-alias rm="rm -i"
-alias rmall="rm -Rf"
+alias ll="ls -lTh" # -l list -T tabbed columns -h human readable file sizes
+alias rm="rm -i" -i confirmation
+alias rmall="rm -rf" -r recursive -f no confirmation
  
-alias     .="cd .."
+#alias     .="cd .." # Dot (.) is 'source' on some systems. Aliasing it can screw up shell scripts.
 alias    ..="cd ../.."
 alias   ...="cd ../../.."
 alias  ....="cd ../../../.."
 alias .....="cd ../../../../.."
 
-# Make
+# make
 alias  m="make"
 alias mi="make install"
 alias mr="make run"
 alias mc="make clean"
 
-# Git
+# git
 alias gch="git checkout"
 alias  gs="git status"
 alias  gd="git diff"
