@@ -18,13 +18,13 @@ doskey ....=cd ../../../..
 doskey .....=cd ../../../../..
 
 rem git
-doskey gch=git checkout $1
+doskey gch=git checkout $*
 doskey  gs=git status
-doskey  gd=git diff $1
-doskey gdc=git diff --cached $1
-doskey  ga=git add -A $1
-doskey  gr=git reset $1
-doskey gco=git commit -m $1
+doskey  gd=git diff $*
+doskey gdc=git diff --cached $*
+doskey  ga=git add -A $*
+doskey  gr=git reset $*
+doskey gco=git commit -m $*
 doskey gpl=git pull
 doskey gps=git push
 doskey  gl=git log
