@@ -1,7 +1,7 @@
 @echo off
 rem Change prompt
-rem [user@host<PIPE>path]
-prompt [%username%@%computername%$B$P]$S
+rem [user@host:path]
+prompt [%username%@%computername%:$P]$S
 
 rem General Shortcuts
 doskey clear=cls
@@ -9,6 +9,7 @@ doskey c=cls
 doskey e=exit
 doskey ls=dir /B $1
 doskey ll=dir $1
+doskey pwd=echo %cd%
 
 doskey ..=cd ../..
 doskey ...=cd ../../..
