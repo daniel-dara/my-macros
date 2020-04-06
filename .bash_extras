@@ -8,8 +8,8 @@ export PS1="[\u@\h:\w] "
 alias c=clear
 alias e=exit
 alias ll="ls -lTh" # -l list -T tabbed columns -h human readable file sizes
-alias rm="rm -i" -i confirmation
-alias rmall="rm -rf" -r recursive -f no confirmation
+alias rm="rm -i" # -i confirmation
+alias rmall="rm -rf" # -r recursive -f no confirmation
  
 #alias     .="cd .." # Dot (.) is 'source' on some systems. Aliasing it can screw up shell scripts.
 alias    ..="cd ../.."
