@@ -2,7 +2,11 @@ alias refresh-bash-extras="wget https://raw.github.com/danielsd/bash_extras/mast
 
 # Change prompt
 # [user@host:directory]
-export PS1="[\u@\h:\w] "
+if [ -n "$ZSH_VERSION" ]; then
+	export PS1="[%n@%m:%~] "
+elif [ -n "$BASH_VERSION" ]; then
+	export PS1="[\u@\h:\w] "
+fi
 
 # General Shortcuts
 alias c=clear
@@ -12,6 +16,7 @@ alias rm="rm -i" # -i confirmation
 alias rmall="rm -rf" # -r recursive -f no confirmation
  
 #alias     .="cd .." # Dot (.) is 'source' on some systems. Aliasing it can screw up shell scripts.
+alias    up="cd .."
 alias    ..="cd ../.."
 alias   ...="cd ../../.."
 alias  ....="cd ../../../.."
