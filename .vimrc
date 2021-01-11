@@ -1,5 +1,5 @@
 imap kj <Esc>
-colorscheme twilight " Download: https://www.vim.org/scripts/script.php?script_id=1677
+colorscheme twilight " Download https://www.vim.org/scripts/script.php?script_id=1677 and place in ~/.vim/colors
 syntax enable    " turn on syntax highlighting
 set number       " show line numbers
 set tabstop=4    " number of visual spaces per TAB
