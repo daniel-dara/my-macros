@@ -28,3 +28,6 @@ doskey gcm=git commit -m $*
 doskey gpl=git pull
 doskey gps=git push
 doskey  gl=git log
+
+rem Applications
+doskey subl=start "" "D:\Program Files\Sublime Text 3\sublime_text.exe"
